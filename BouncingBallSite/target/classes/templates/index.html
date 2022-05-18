@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta property="og:url" content="https://bounce-ball-app-1.herokuapp.com/">
+    <title>Emie's Bouncing Balls</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Emie Abalora">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrapper">
+    <div class="heading">
+        <h1>Bouncing Balls</h1>
+        <h3>by Emie Watin Abalora</h3>
+        <p>Bouncing Ball project implements Runnable
+            so that each ball can possess its thread that helps with
+            creating/starting/managing/stopping threads in the program.
+            Each ball maintains its attributes such as size, coordinates,
+            color, velocity, and boundary limits.  Accessor and Mutator methods
+            are available for each respective attribute to allow
+            BallPanel to maintain a Ball's creation and positioning.</p>
+        <img src="pictures/application.png" alt="application-img">
+    </div>
+    <div class="container">
+        <h4>Ball class</h4>
+        <p>Ball class implements Runnable, it has a method that
+            updates the position of the ball,
+            detects boundary collision, and updates ball velocity.</p>
+        <img src="pictures/ball_class.png" alt="code snippet">
+        <img src="pictures/ball_constructor.png" alt="code snippet">
+    </div>
+    <div class="container">
+        <h4>BallPanel class</h4>
+        <p>BallPanel extends Jpanel, which has a method that
+            creates ball bounce and executes it in a thread;
+            for each mouse click. It randomly generates a ball color,
+            adds a new ball object to a LinkedList, and runs a new thread of
+            created ball object.</p>
+        <img src="pictures/ball_panel.png" alt="code snippet">
+        <img src="pictures/ball_position.png" alt="code snippet">
+    </div>
+    <div class="container">
+        <h4>BouncingBall class</h4>
+        <p>Bouncing Ball contains the main class;
+            it's the core method of the program and calls all others.
+            It can't return values and accepts parameters for complex
+            command-line processing. </p>
+        <img src="pictures/BB.png" alt="code snippet">
+        <img src="pictures/BouncingBall.png" alt="code snippet">
+    </div>
+    <div class="container">
+        <h4>Student_Sig_Block class</h4>
+        <p>Student segnature class contains a variables to create ascii
+            border for signature block and also declare and initialize
+            variables to hold student/course information.
+        </p>
+        <img src="pictures/Sg.png" alt="code snippet">
+        <img class="last-img"src="pictures/Student sig.png" alt="code snippet">
+    </div>
+    <div>
+        Heroku Link
+
+        <a href="https://bounce-ball-app-1.herokuapp.com"
+           target="_blank">Heroku link</a>
+    </div>
+    <div>
+        Click here to download the project in GitHub.
+
+        <a href="https://github.com/Emie0038/BouncingBalls.jar?raw=true"
+           target="_blank">Download</a>
+    </div>
+    </div>
+
+
+</div>
+
+</body>
+</html>
